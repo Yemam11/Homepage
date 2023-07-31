@@ -5,6 +5,8 @@ nav {
 html{
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -12,9 +14,10 @@ body {
     background-image: url("Stars.png");
     background-size: cover;
     margin: 0px;
+    padding: 0px;
     overflow: auto;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .bgVid{
@@ -63,14 +66,15 @@ nav a{
 
 .resume{
     display: flex;
-    height: 100%;
+    height: auto;
     background: rgba(1,23,44,0.8);
+    margin: 50px;
 }
 
 .leftCollumn{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     width: 30%;
     border: 0px;
     padding: 0px;
@@ -80,8 +84,8 @@ nav a{
 .rightCollumn{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    height: 100%;
+    /* align-items: stretch; */
+    min-height: 100%;
     width: 70%;
     border: 0px;
     padding: 0px;
@@ -90,8 +94,10 @@ nav a{
 }
 
 .profile{
+    min-height: 100%;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     background: rgba(255,255,255,0.15);
+    margin: 10px;
 }
 
 .pfp{
@@ -114,11 +120,13 @@ nav a{
         bottom: -24px;
         left: 1px;
         color: white;
-        font-size: 70px;
+        font-size: 3vw;
         text-shadow: 3px 3px 5px black;
 }
 
 .infoBox {
+    display:flex;
+    flex-direction:column;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     background-color: (1,23,44,0.95);
     margin: 10px;
@@ -126,7 +134,7 @@ nav a{
     position: relative;
     text-shadow: 1px 1px 1px black;
     background: rgba(255,255,255,0.15);
-    height: 50%;
+    height: auto;
 }
 
 .infoBox:hover{
@@ -137,7 +145,7 @@ nav a{
 
 
 .icon{
-    font-size: 30px;
+    font-size: 1.5vw;
     color: white;
     text-align: center;
     vertical-align: middle;
@@ -145,14 +153,14 @@ nav a{
 }
 
 .boxHeader{
-    font-size: 50px;
+    font-size: 4vw;
     position: relative;
     top: -3px;
     left: 12px;
 }
 
 .boxIcon{
-    font-size: 50px;
+    font-size: 4vw;
     position: relative;
     top: -3px;
     margin-left: 10px;
@@ -163,7 +171,7 @@ nav a{
 }
 
 .roleName{
-    font-size: 24px;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -171,20 +179,18 @@ nav a{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin:
+    margin: 10px;
 }
 .calendarIcon{
-    font-size: 18px;
+    font-size: 1.5vw;
     color: white;
     float: right;
-    margin: 10px 10px 10px 10px;
-    top: 50%;
 
 }
 
 .company{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 
@@ -196,7 +202,7 @@ hr{
 }
 
 .resumeBullet{
-    font-size: 16;
+    font-size: 1.2vw;
 }
 %
 .jumbopadding{
