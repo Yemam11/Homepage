@@ -1,0 +1,407 @@
+nav {
+    padding: 50px 100px 50px 100px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    color: white;
+    background-image: url("Stars.png");
+    background-size: cover;
+    margin: 0px;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.bgVid{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+}
+
+.title {
+    padding: 50px 100px 10px 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+}
+
+nav a{
+    color: white !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.logo {
+    color: white;
+    font-size: 70;
+}
+
+.navigator{
+    background: rgba(1,23,44,.8);
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    text-align: center;
+
+}
+
+#homeNavigation{
+    border-top-color: white;
+    border-top-style: solid;
+}
+
+.resume{
+    display: flex;
+    height: 100%;
+    background: rgba(1,23,44,0.8);
+}
+
+.leftCollumn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    border: 0px;
+    padding: 0px;
+    margin: 50px;
+}
+
+.rightCollumn{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    width: 70%;
+    border: 0px;
+    padding: 0px;
+    margin: 50px;
+
+}
+
+.profile{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    background: rgba(255,255,255,0.15);
+}
+
+.pfp{
+    margin: auto;
+    max-width: 100%;
+    max height: 70%;
+}
+
+.profile:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.pfpcontainer{
+    position: relative;
+}
+
+.caption{
+        position: absolute;
+        bottom: -24px;
+        left: 1px;
+        color: white;
+        font-size: 70px;
+        text-shadow: 3px 3px 5px black;
+}
+
+.infoBox {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    background-color: (1,23,44,0.95);
+    margin: 10px;
+    color: white;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(255,255,255,0.15);
+    height: 50%;
+}
+
+.infoBox:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+
+}
+
+
+.icon{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.boxHeader{
+    font-size: 50px;
+    position: relative;
+    top: -3px;
+    left: 12px;
+}
+
+.boxIcon{
+    font-size: 50px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+}
+
+.role{
+
+}
+
+.roleName{
+    font-size: 24px;
+    text-align: center;
+}
+
+.roleDetails{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin:
+}
+.calendarIcon{
+    font-size: 18px;
+    color: white;
+    float: right;
+    margin: 10px 10px 10px 10px;
+    top: 50%;
+
+}
+
+.company{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+
+hr{
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.resumeBullet{
+    font-size: 16;
+}
+%
+.jumbopadding{
+    margin: 100px 100px 100px 100px;
+
+}
+
+.jumbospacing{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerButton{
+    box-sizing: content-box;
+    background-color: #0d6efd;
+    border-radius: 12px;
+    border: none;;
+    color: white;
+}
+
+.centerButton:hover{
+    box-shadow: 0px 0px 12px 0 rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.gallery{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width: 100vw;
+
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-size: border-box;
+    padding: 10px;
+    height: 33%;
+    width: 100%;
+}
+
+.row > img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    padding: 0px;
+    margin: 10px;
+}
+
+.row > img:hover{
+    transform:scale(1.02);
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.8);
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.controlsContainer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.modalImg{
+    display: flex;
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0px;
+    justify-content: center;
+}
+
+.imgPlaceholder{
+    display: flex;
+    position: relative;
+    object-fit: contain;
+    box-shadow: 0px 0px 12px 0 rgba(255, 255, 255, 0.8);
+    border: solid;
+    border-color: black;
+}
+
+.modalImg > img{
+    position: relative;
+    object-fit: contain;
+    box-shadow: 0px 0px 12px 0 rgba(255, 255, 255, 0.8);
+    border: solid;
+    border-color: black;
+}
+
+.prev{
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    font-size: 50px;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+}
+
+.prev:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next{
+    position: fixed;
+    top: 50%;
+    right: 20%;
+    font-size: 50px;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+}
+
+.next:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.closed{
+    font-size: 50px;
+    color: White;
+    position: absolute;
+    right: 0;
+    padding: 0px 20px 0px 20px;
+    margin: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.closed:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactCards{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+
+}
+
+.cardcontainer{
+    border-radius: 15px;
+}
+
+.cardcontainer:hover{
+    transform:scale(1.02);
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.8);
+    transition: 0.1s;
+}
+
+.card-style{
+    max-height: 30%;
+    height: 30%;
+    margin: 50px;
+    width: 20%;
+}
+
+.imgstyle{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+#phonenum{
+    text-align: center;
+}
+
