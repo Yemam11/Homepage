@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            width: 600px;
+            height: 400px;
+            border: solid;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+    <body>
+        <div class = "center">
+            <h1>My model</h1>
+            <model-viewer src="Duck.glb" camera-controls auto-rotate ar ios-src = "output2.usdz"></model-viewer>
+        </div>
+        
+    </body>
+</html>
