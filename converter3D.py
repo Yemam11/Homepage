@@ -4,7 +4,7 @@ import aspose.threed as a3d
 def stl_to_glb(path):
     input = path
     scene = a3d.Scene.from_file(input)
-    scene.save("3D Models\cube.glb")
+    scene.save("3D Models\texturedcube.glb")
 
 
 def stl_to_usdz(path):
@@ -23,6 +23,6 @@ def glb_to_stl(path):
     scene.save("3D Models\testing.stl")
 
 
-glb_to_usdz("3D Models\cube.glb")
+stl_to_glb("3D Models\texturedcube.stl")
 
 #TODO: find some way to make the names change with successive file uploads/standardize the naming of the output files
