@@ -152,8 +152,8 @@ model-viewer{
         height: 15vh;
     }
     model-viewer{
-        width: 40vw;
-        height: 40vw;
+        width: 95%;
+        height: 50vh;
         /* border: solid var(--shelleygrey); */
         margin: 10px;
     }
