@@ -1,0 +1,220 @@
+:root{
+    font-family: 'Open Sans';
+    --shelleyblue: rgb(48, 89, 146);
+    --shelleygrey: rgb(151, 149, 140);
+    --lightbluebg: rgba(48, 89, 146, 0.1);
+    --cardmargin: 20px;
+    --shadow-radius: 4px;
+}
+.container{
+    max-height: 15vh;
+    height: 15vh;
+    max-width: 100vw;
+    width: 100vw;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid;
+    border-color: var(--shelleyblue);
+    margin: 1vw;
+;
+}
+
+.logo{
+    max-width: 30vw;
+    width: 30vw;
+    max-height: 15vh;
+    height: 15vh;
+    object-fit: contain;
+}
+
+#logo{
+    object-fit: contain;
+    max-width: 30vw;
+    width: 30vw;
+    max-height: 15vh;
+    height: 15vh;
+}
+model-viewer{
+    width: 40vw;
+    height: 40vw;
+    /* border: solid var(--shelleygrey); */
+    margin: 10px;
+}
+
+.modelimg{
+    max-height: 50%;
+    height: 50%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: var(--shelleygrey);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid var(--shelleygrey) 3px;
+    border-radius: var(--shadow-radius);
+    box-shadow: .5rem .5rem 0 var(--shelleygrey);
+    max-width: 50%;
+    width: 50%;
+    margin: 50px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.modeltext{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    margin-left: 5vh;
+}
+
+.modelcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--shelleygrey) 3px;
+    border-radius: var(--shadow-radius);
+    box-shadow: .5rem .5rem 0 var(--shelleygrey);
+    max-width: 90%;
+    width: 90%;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+@media screen and (max-width: 480px){
+    :root{
+        font-family: 'Open Sans';
+        --shelleyblue: rgb(48, 89, 146);
+        --shelleygrey: rgb(151, 149, 140);
+        --lightbluebg: rgba(48, 89, 146, 0.1);
+        --cardmargin: 20px;
+        --shadow-radius: 4px;
+        font-size: 1.2em;
+    }
+    body{
+        font-size: 0.7em;
+    }
+    .container{
+        max-height: 15vh;
+        height: 15vh;
+        max-width: 100vw;
+        width: 100vw;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid;
+        border-color: var(--shelleyblue);
+        margin: 1vw;
+    }
+
+    nav > a{
+        color: var(--shelleyblue);
+    }
+
+    
+    .logo{
+        max-width: 30vw;
+        width: 30vw;
+        max-height: 15vh;
+        height: 15vh;
+        object-fit: contain;
+    }
+    
+    #logo{
+        object-fit: contain;
+        max-width: 30vw;
+        width: 30vw;
+        max-height: 15vh;
+        height: 15vh;
+    }
+    model-viewer{
+        width: 40vw;
+        height: 40vw;
+        /* border: solid var(--shelleygrey); */
+        margin: 10px;
+    }
+    
+    .modelimg{
+        max-height: 50%;
+        height: 50%;
+        max-width: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items:center;
+        color: var(--shelleygrey);
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid var(--shelleygrey) 3px;
+        border-radius: var(--shadow-radius);
+        box-shadow: .5rem .5rem 0 var(--shelleygrey);
+        max-width: 90%;
+        width: 90%;
+        margin: 5vw;    
+    }
+    
+    .card:hover{
+        transform: scale(1.03);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .modeltext{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+        margin-left: 5vh;
+    }
+    
+    .modelcard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid var(--shelleygrey) 3px;
+        border-radius: var(--shadow-radius);
+        box-shadow: .5rem .5rem 0 var(--shelleygrey);
+        max-width: 95%;
+        width: 95%;
+    }
+    
+    .cardcontainer{
+        display: flex;
+        justify-content: center;
+        margin: 5vh;
+    }
+}
