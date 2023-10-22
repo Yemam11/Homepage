@@ -103,7 +103,7 @@ model-viewer{
     margin: 5vh;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 800px){
     :root{
         font-family: 'Open Sans';
         --shelleyblue: rgb(48, 89, 146);
