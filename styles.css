@@ -245,6 +245,24 @@ hr{
     height: auto;
 }
 
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    min-height: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+embed{
+    width: 80%;
+    height: 80%;
+    min-height: 100%;
+}
+.showcasevid{
+    width: 80%;
+    height: 80%;
+}
 @media screen and (max-width: 480px) {
     .caption{
         position: absolute;
