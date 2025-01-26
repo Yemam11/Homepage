@@ -75,6 +75,9 @@ nav a{
     display: flex;
     height: auto;
     background: rgba(1,23,44,0.8);
+    justify-items: center;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
 .leftCollumn{
@@ -90,7 +93,7 @@ nav a{
 .rightCollumn{
     display: flex;
     flex-direction: column;
-    /* align-items: stretch; */
+    align-items: center;
     min-height: 100%;
     width: 70%;
     border: 0px;
@@ -169,7 +172,7 @@ nav a{
     position: relative;
     text-shadow: 1px 1px 1px black;
     background: rgba(255,255,255,0.15);
-    /* max-height: 100%; */
+    align-items: center;
     min-width: 100%;
     min-height: 100%;
 }
