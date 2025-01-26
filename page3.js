@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
         image.addEventListener("click", function(){
             let newImg = image.src;
             spotlightImg.src = newImg;
-            lightbox.style.display = "block";
+            lightbox.style.display = "flex";
             for (var i = 0; i < images.length; i++)
             {
                 if (images[i].src === spotlightImg.src)
